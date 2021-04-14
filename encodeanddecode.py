@@ -1,19 +1,10 @@
 from tkinter import *
-
-
 import random
-
-
 import base64
 
-
 root = Tk()
-
-
 root.geometry("1200x500")
-
-
-root.title("Message Encryption and Decryption")
+root.title("Encryption and Decryption")
 
 Tops = Frame(root, width=1600, relief=SUNKEN)
 Tops.pack(side=TOP)
@@ -30,14 +21,10 @@ lblInfo = Label(Tops, font=('arial', 50, 'bold'),
 
 lblInfo.grid(row=0, column=0)
 
-
-
 Msg = StringVar()
 key = StringVar()
 mode = StringVar()
 Result = StringVar()
-
-
 
 lblMsg = Label(f1, font=('arial', 16, 'bold'),
                text="MESSAGE", bd=16, anchor="w")
@@ -56,14 +43,11 @@ lblkey = Label(f1, font=('arial', 16, 'bold'),
 
 lblkey.grid(row=2, column=0)
 
-
-
 txtkey = Entry(f1, font=('arial', 16, 'bold'),
                textvariable=key, bd=10, insertwidth=4,
                bg="powder blue", justify='right')
 
 txtkey.grid(row=2, column=1)
-
 
 lblmode = Label(f1, font=('arial', 16, 'bold'),
                 text="MODE(e for encrypt, d for decrypt)",
